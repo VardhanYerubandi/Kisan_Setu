@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Zero runtime dependencies: the backend uses only the JDK. Build: mvn -q package   Run: java -jar target/kisan-setu.jar
+     (This pom was not executed by the author: Maven was not available offline. ./run.sh is the verified way to run.) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>in.kisansetu</groupId>
+  <artifactId>kisan-setu</artifactId>
+  <version>2.0.0</version>
+  <packaging>jar</packaging>
+  <properties>
+    <maven.compiler.release>21</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build>
+    <finalName>kisan-setu</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.4.1</version>
+        <configuration>
+          <archive><manifest><mainClass>setu.Main</mainClass></manifest></archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

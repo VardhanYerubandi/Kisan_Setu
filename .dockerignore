@@ -1,0 +1,7 @@
+frontend/node_modules
+backend/out
+docs
+tools
+demo
+*.zip
+*.md

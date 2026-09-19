@@ -1,0 +1,5 @@
+backend/out/
+backend/data/
+data/
+frontend/node_modules/
+*.zip

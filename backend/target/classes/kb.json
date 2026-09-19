@@ -1,0 +1,453 @@
+{
+ "crops": [
+  "paddy",
+  "tomato",
+  "chilli",
+  "cotton",
+  "maize",
+  "groundnut"
+ ],
+ "symptoms": [
+  "spots",
+  "yellow",
+  "curl",
+  "holes",
+  "drying",
+  "fruit",
+  "sticky",
+  "mould",
+  "insects",
+  "stunt"
+ ],
+ "problems": [
+  {
+   "id": "paddy_blast",
+   "crop": "paddy",
+   "type": "disease",
+   "en": "Rice blast",
+   "sym": {
+    "spots": 3,
+    "drying": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "nitrogen"
+     ],
+     [
+      "clean"
+     ]
+    ],
+    "low": [
+     [
+      "spray",
+      "@pseudo",
+      "10 g"
+     ]
+    ],
+    "chem": [
+     [
+      "spray",
+      "Tricyclazole 75 WP",
+      "0.6 g"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "paddy_bph",
+   "crop": "paddy",
+   "type": "pest",
+   "en": "Brown planthopper",
+   "sym": {
+    "drying": 3,
+    "yellow": 2,
+    "insects": 2,
+    "stunt": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "drain"
+     ],
+     [
+      "nitrogen"
+     ]
+    ],
+    "low": [
+     [
+      "spray",
+      "@neem",
+      "5 ml"
+     ]
+    ],
+    "chem": [
+     [
+      "spray",
+      "Buprofezin 25 SC",
+      "1.6 ml"
+     ],
+     [
+      "ask"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "paddy_blb",
+   "crop": "paddy",
+   "type": "disease",
+   "en": "Bacterial leaf blight",
+   "sym": {
+    "drying": 3,
+    "yellow": 2,
+    "spots": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "drain"
+     ],
+     [
+      "nitrogen"
+     ],
+     [
+      "seed"
+     ]
+    ],
+    "low": [],
+    "chem": [
+     [
+      "spray",
+      "Copper oxychloride",
+      "2.5 g"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tomato_early",
+   "crop": "tomato",
+   "type": "disease",
+   "en": "Early blight",
+   "sym": {
+    "spots": 3,
+    "yellow": 2,
+    "fruit": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "remove"
+     ],
+     [
+      "air"
+     ],
+     [
+      "rotate"
+     ]
+    ],
+    "low": [
+     [
+      "spray",
+      "@pseudo",
+      "10 g"
+     ]
+    ],
+    "chem": [
+     [
+      "spray",
+      "Mancozeb 75 WP",
+      "2.5 g"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tomato_late",
+   "crop": "tomato",
+   "type": "disease",
+   "en": "Late blight",
+   "sym": {
+    "spots": 3,
+    "mould": 2,
+    "fruit": 2,
+    "drying": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "remove"
+     ],
+     [
+      "air"
+     ]
+    ],
+    "low": [],
+    "chem": [
+     [
+      "spray",
+      "Metalaxyl + Mancozeb",
+      "2.5 g"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tomato_curl",
+   "crop": "tomato",
+   "type": "virus",
+   "en": "Leaf curl virus",
+   "sym": {
+    "curl": 3,
+    "yellow": 2,
+    "stunt": 2,
+    "insects": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "remove"
+     ],
+     [
+      "seed"
+     ]
+    ],
+    "low": [
+     [
+      "trap_yellow"
+     ],
+     [
+      "spray",
+      "@neem",
+      "5 ml"
+     ]
+    ],
+    "chem": [
+     [
+      "spray",
+      "Imidacloprid 17.8 SL",
+      "0.3 ml"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "chilli_curl",
+   "crop": "chilli",
+   "type": "pest",
+   "en": "Leaf curl (thrips, mites)",
+   "sym": {
+    "curl": 3,
+    "insects": 2,
+    "stunt": 1,
+    "yellow": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "remove"
+     ],
+     [
+      "clean"
+     ]
+    ],
+    "low": [
+     [
+      "trap_yellow"
+     ],
+     [
+      "spray",
+      "@neem",
+      "5 ml"
+     ]
+    ],
+    "chem": [
+     [
+      "ask"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "chilli_anthra",
+   "crop": "chilli",
+   "type": "disease",
+   "en": "Fruit rot (anthracnose)",
+   "sym": {
+    "fruit": 3,
+    "spots": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "remove"
+     ],
+     [
+      "air"
+     ],
+     [
+      "seed"
+     ]
+    ],
+    "low": [],
+    "chem": [
+     [
+      "spray",
+      "Carbendazim 50 WP",
+      "1 g"
+     ],
+     [
+      "spray",
+      "Mancozeb 75 WP",
+      "2.5 g"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cotton_pbw",
+   "crop": "cotton",
+   "type": "pest",
+   "en": "Pink bollworm",
+   "sym": {
+    "fruit": 3,
+    "holes": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "remove"
+     ],
+     [
+      "clean"
+     ]
+    ],
+    "low": [
+     [
+      "trap_phero"
+     ],
+     [
+      "spray",
+      "@neem",
+      "5 ml"
+     ]
+    ],
+    "chem": [
+     [
+      "ask"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cotton_whitefly",
+   "crop": "cotton",
+   "type": "pest",
+   "en": "Whitefly and sucking pests",
+   "sym": {
+    "sticky": 3,
+    "insects": 3,
+    "yellow": 2,
+    "curl": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "nitrogen"
+     ],
+     [
+      "clean"
+     ]
+    ],
+    "low": [
+     [
+      "trap_yellow"
+     ],
+     [
+      "spray",
+      "@neem",
+      "5 ml"
+     ]
+    ],
+    "chem": [
+     [
+      "ask"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "maize_faw",
+   "crop": "maize",
+   "type": "pest",
+   "en": "Fall armyworm",
+   "sym": {
+    "holes": 3,
+    "insects": 2,
+    "stunt": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "hand_pick"
+     ],
+     [
+      "sand_whorl"
+     ]
+    ],
+    "low": [
+     [
+      "spray",
+      "@neem",
+      "5 ml"
+     ]
+    ],
+    "chem": [
+     [
+      "spray",
+      "Emamectin benzoate 5 SG",
+      "0.4 g"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "groundnut_tikka",
+   "crop": "groundnut",
+   "type": "disease",
+   "en": "Tikka leaf spot",
+   "sym": {
+    "spots": 3,
+    "yellow": 2,
+    "drying": 1
+   },
+   "tiers": {
+    "free": [
+     [
+      "remove"
+     ],
+     [
+      "clean"
+     ],
+     [
+      "rotate"
+     ]
+    ],
+    "low": [],
+    "chem": [
+     [
+      "spray",
+      "Mancozeb 75 WP",
+      "2.5 g"
+     ],
+     [
+      "spray",
+      "Chlorothalonil 75 WP",
+      "2 g"
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+# Fly.io config. Change the app name, then see DEPLOY.md. Not tested by the author.
+app = "kisan-setu-CHANGE-ME"
+primary_region = "sin"   # pick the region nearest your farmers: fly platform regions
+
+[build]
+
+[env]
+  PORT = "8080"
+  HOST = "0.0.0.0"
+  KS_DATA = "/data"
+  TRUST_PROXY = "1"      # one proxy (Fly) in front; needed so rate limits are per farmer, not per proxy
+
+[mounts]
+  source = "kisan_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    path = "/api/health"
+    timeout = "5s"
